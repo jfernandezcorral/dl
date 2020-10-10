@@ -1,0 +1,90 @@
+@import '../constantes.scss';
+.mensajePopupSimple{
+    border-top: 3px solid #a51a1a;
+    min-width: 30%;
+    background-color: white;
+    font-size: .8em;
+    border-radius: 3px;
+    .cabecera{
+        padding: 1em;
+        padding-left: 1.1cm;
+        padding-bottom: 0;
+        font-size: 1.4em;
+        font-weight: bold;
+        background-image: url("img/cancel.svg");
+        background-repeat: no-repeat;
+        background-position: .3em .4em;
+        background-size: 1.8em;
+    }
+    .texto{
+        padding: 1em;
+        padding-left: 1.1cm;
+    }
+    .botones{
+        border-top: 1px solid #dbdbdb;
+        display: flex;
+        padding: .7em;
+        flex-direction: row-reverse;
+    }
+}
+.boton{
+    font: inherit;
+    padding: 4px 15px;
+    border-radius: 2px;
+    border: 1px solid #bcbcbc;
+    border-bottom: 2px solid silver;
+    //background: linear-gradient(#f9f9f9,#f1f1f1);
+    background-color: #e8e8e8;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #eee;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        //filter: brightness(93%) drop-shadow(0px 0px 4px silver);
+        box-shadow: 1px 2px 2px #999;
+        opacity: .73;
+    }
+    &.neg{
+        border-bottom: 3px solid #970302;
+    }
+    &.neutro{
+        border-bottom: 3px solid rgb(155, 153, 153);
+    }
+    &.positivo{
+        border-bottom: 3px solid #839223;
+        &.ico{
+            background-image: url("img/success.svg");
+            background-repeat: no-repeat;
+            background-position: 6px 5px;
+            background-size: .9em;
+            padding-left: 1.7em;
+        }
+    }
+    span.close{
+        border: 1px solid #242424;
+        border-top: 3px solid #017A99;
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        left: -6px;
+        top: 1px;
+        font-family: 'bankia-icons';
+        font-size: .9em;
+        -webkit-font-smoothing: antialiased;
+        &:before{
+            content: '\e01a';
+        }
+    }
+}
+
+
+
+
+.rojo{
+	color: $color;
+}
+
+.panel {
+	background-color: silver;
+	padding: 5px;
+}

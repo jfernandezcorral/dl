@@ -1,0 +1,22 @@
+.pop{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    .velo{
+        background-color: #000;
+        opacity: 0.3;
+        top:0;
+        left:0;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+    .client{
+        z-index: 1;
+    }
+}
