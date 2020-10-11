@@ -12,7 +12,7 @@ let config = {
     filename: 'index_bundle.js'
   },
   devServer: {
-    proxy: {
+    /*proxy: {
       '/tabit':{
         target: "http://tabit-epd.cm.es/api/1.0/sap/tabit/",
         pathRewrite: {"^/tabit" : ""}
@@ -25,7 +25,7 @@ let config = {
         target: "http://tasap-epd.ms.bankia.int:8080/",
         pathRewrite: {"^/tas" : ""}
       }
-    },
+    },*/
     host: "0.0.0.0"
   },
   resolve: {
@@ -33,7 +33,8 @@ let config = {
     alias: {
       client: path.resolve(__dirname,'./client'),
       cmp: path.resolve(__dirname,'./client/componentes'),
-      img: path.resolve(__dirname,'./client/img')
+      img: path.resolve(__dirname,'./client/img'),
+      data: path.resolve(__dirname,'./client/data')
     }
   },
   devtool: 'source-map',

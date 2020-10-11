@@ -1,6 +1,6 @@
 import './base.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './componentes/App'
+import BostonHousing from './componentes/BostonHousing'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<BostonHousing />, document.getElementById('root'))
